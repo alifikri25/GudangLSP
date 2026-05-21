@@ -12,6 +12,10 @@
     ],
     "routes": [
         {
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
@@ -26,7 +30,10 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
+        "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "database"
+        "FILESYSTEM_DISK": "local",
+        "QUEUE_CONNECTION": "sync"
     }
 }
+
