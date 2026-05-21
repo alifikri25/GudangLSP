@@ -26,7 +26,6 @@ if (!getenv('APP_KEY')) {
     putenv('APP_KEY=base64:Hm8H8q1vSlC/iMnGcJdAfNYFZOzh3DYx0W7QSsE4HOs=');
 }
 
-define('LARAVEL_START', microtime(true));
 require __DIR__ . '/../public/index.php';
 
 
